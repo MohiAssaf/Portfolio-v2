@@ -1,10 +1,7 @@
-function App() {
+import Layout from "./components/Layout";
 
-  return (
-    <>
-      <h1 className='bg-red-600'>Portfolio V2</h1>
-    </>
-  )
+function App() {
+  return <Layout />;
 }
 
-export default App
+export default App;
