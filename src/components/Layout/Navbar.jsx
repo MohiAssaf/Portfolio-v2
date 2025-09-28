@@ -2,12 +2,15 @@ import { FaFacebook, FaGithub, FaInstagram } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24 p-6 md:p-12 lg:p-24">
+    <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-2/5 lg:flex-col lg:justify-between lg:py-24 p-6 md:p-12 lg:p-24">
       <div>
-        <h1 className="text-4xl font-bold tracking-tight text-light-slate sm:text-5xl">
+        <h1 className="text-4xl font-medium tracking-tight text-light-slate sm:text-5xl">
           Mohamed
         </h1>
-        <h2 className="mt-3 text-lg font-medium tracking-tight text-light-slate sm:text-xl">
+        <h2 className="text-4xl font-medium tracking-tight text-light-slate sm:text-5xl">
+          Abu Assaf
+        </h2>
+        <h2 className="mt-3 text-lg font-medium tracking-tight text-green/70 sm:text-xl">
           Junior Software Developer
         </h2>
         <p className="mt-4 max-w-xs leading-normal text-slate">
