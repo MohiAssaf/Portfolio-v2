@@ -1,4 +1,5 @@
 import About from "../About/About";
+import Education from "../Education/Education";
 import Navbar from "./Navbar";
 
 function Layout() {
@@ -12,6 +13,7 @@ function Layout() {
           className="pt-24 lg:w-3/5 lg:py-24 p-6 md:p-12 lg:p-24"
         >
           <About />
+          <Education />
         </main>
       </div>
     </div>
