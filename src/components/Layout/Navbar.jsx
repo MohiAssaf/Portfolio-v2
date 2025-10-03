@@ -1,4 +1,4 @@
-import { FaFacebook, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -118,6 +118,17 @@ const Navbar = () => {
               aria-label="Facebook"
             >
               <FaFacebook />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/mohamed-assaf-843324176/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate hover:text-green transition-colors text-2xl"
+              aria-label="Facebook"
+            >
+              <FaLinkedin />
             </a>
           </li>
         </ul>
