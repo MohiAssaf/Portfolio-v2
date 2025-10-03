@@ -1,3 +1,4 @@
+import CertificateCarousel from "./CertificateCarousel";
 import EducationItem from "./EducationItem";
 
 const Education = () => {
@@ -27,6 +28,22 @@ const Education = () => {
           tags={["JavaScript", "Python", "HTML & CSS", "React JS"]}
         />
       </ol>
+
+      <CertificateCarousel
+        certificates={[
+          { image: "/images/py-basics.png", pdf: "/pdfs/py-basics.pdf" },
+          { image: "/images/py-fund.png", pdf: "/pdfs/py-fund.pdf" },
+          { image: "/images/py-advanced.png", pdf: "/pdfs/py-advanced.pdf" },
+          { image: "/images/py-oop.png", pdf: "/pdfs/py-oop.pdf" },
+          { image: "/images/web-bs.png", pdf: "/pdfs/web-bs.pdf" },
+          { image: "/images/web-fw.png", pdf: "/pdfs/web-fw.pdf" },
+          { image: "/images/js-advanced.png", pdf: "/pdfs/js-advanced.pdf" },
+          { image: "/images/js-app.png", pdf: "/pdfs/js-app.pdf" },
+          { image: "/images/html&css.png", pdf: "/pdfs/html&css.pdf" },
+          { image: "/images/reactjs.png", pdf: "/pdfs/reactjs.pdf" },
+          { image: "/images/py-dip.png", pdf: "/pdfs/py-dip.pdf" },
+        ]}
+      />
     </section>
   );
 };
