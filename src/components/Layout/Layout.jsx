@@ -1,5 +1,6 @@
 import About from "../About/About";
 import Education from "../Education/Education";
+import Experience from "../Experience/Experience";
 import Navbar from "./Navbar";
 
 function Layout() {
@@ -14,6 +15,7 @@ function Layout() {
         >
           <About />
           <Education />
+          <Experience />
         </main>
       </div>
     </div>

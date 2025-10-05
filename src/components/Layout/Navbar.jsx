@@ -45,33 +45,11 @@ const Navbar = () => {
             <li>
               <a
                 className="group flex items-center py-3 text-slate hover:text-green"
-                href="#skills"
+                href="#experience"
               >
                 <span className="mr-4 h-px w-8 bg-slate transition-all group-hover:w-16 group-hover:bg-green motion-reduce:transition-none"></span>
                 <span className="text-xs font-bold uppercase tracking-widest group-hover:text-light-slate">
-                  SKILLS
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                className="group flex items-center py-3 text-slate hover:text-green"
-                href="#whyme"
-              >
-                <span className="mr-4 h-px w-8 bg-slate transition-all group-hover:w-16 group-hover:bg-green motion-reduce:transition-none"></span>
-                <span className="text-xs font-bold uppercase tracking-widest group-hover:text-light-slate">
-                  WHY ME
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                className="group flex items-center py-3 text-slate hover:text-green"
-                href="#certificates"
-              >
-                <span className="mr-4 h-px w-8 bg-slate transition-all group-hover:w-16 group-hover:bg-green motion-reduce:transition-none"></span>
-                <span className="text-xs font-bold uppercase tracking-widest group-hover:text-light-slate">
-                  DIPLOMA
+                  Experience
                 </span>
               </a>
             </li>
