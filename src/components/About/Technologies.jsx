@@ -1,45 +1,16 @@
 import TechIcon from "@/components/About/TechIcon";
 import { motion } from "framer-motion";
-import { technologies } from "@/constants/technologies";
-
-const containerVariants = {
-  hidden: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.1,
-    },
-  },
-};
-
-const techVariants = {
-  hidden: {
-    opacity: 0,
-    y: 20,
-    rotate: -15,
-    scale: 0.8,
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    rotate: 0,
-    scale: 1,
-    transition: {
-      type: "spring",
-      stiffness: 100,
-      damping: 10,
-    },
-  },
-};
+import {
+  technologies,
+  techVariants,
+  techContainerVariants,
+} from "@/constants/technologies";
 
 const Technologies = () => {
   return (
     <motion.div
       className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-12 gap-y-2 justify-items-center"
-      variants={containerVariants}
+      variants={techContainerVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
