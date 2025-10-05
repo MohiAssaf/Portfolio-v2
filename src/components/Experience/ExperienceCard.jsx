@@ -1,5 +1,5 @@
 import { FiBriefcase, FiExternalLink } from "react-icons/fi";
-import ProjectItem from "./ProjectItem";
+import ProjectItem from "@/components/Experience/ProjectItem";
 import { motion } from "framer-motion";
 
 const ExperienceCard = ({ exp, index }) => (

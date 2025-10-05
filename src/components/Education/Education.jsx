@@ -1,5 +1,5 @@
-import CertificateCarousel from "./CertificateCarousel";
-import EducationItem from "./EducationItem";
+import CertificateCarousel from "@/components/Education/CertificateCarousel";
+import EducationItem from "@/components/Education/EducationItem";
 
 const Education = () => {
   return (

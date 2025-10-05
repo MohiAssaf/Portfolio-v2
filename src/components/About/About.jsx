@@ -1,5 +1,4 @@
-import { motion } from "framer-motion";
-import Technologies from "./Technologies";
+import Technologies from "@/components/About/Technologies";
 
 const About = () => {
   return (

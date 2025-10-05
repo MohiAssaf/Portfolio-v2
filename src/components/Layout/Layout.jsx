@@ -1,7 +1,7 @@
-import About from "../About/About";
-import Education from "../Education/Education";
-import Experience from "../Experience/Experience";
-import Navbar from "./Navbar";
+import About from "@/components/About/About";
+import Education from "@/components/Education/Education";
+import Experience from "@/components/Experience/Experience";
+import Navbar from "@/components/Layout/Navbar";
 
 function Layout() {
   return (

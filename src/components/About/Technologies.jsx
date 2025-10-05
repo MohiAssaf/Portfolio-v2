@@ -1,6 +1,6 @@
-import TechIcon from "./TechIcon";
+import TechIcon from "@/components/About/TechIcon";
 import { motion } from "framer-motion";
-import { technologies } from "../../constants/technologies";
+import { technologies } from "@/constants/technologies";
 
 const containerVariants = {
   hidden: {

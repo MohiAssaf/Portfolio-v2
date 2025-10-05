@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import ExperienceCard from "./ExperienceCard";
-import { experiences } from "../../data/experiences";
+import ExperienceCard from "@/components/Experience/ExperienceCard";
+import { experiences } from "@/data/experiences";
 
 const Experience = () => (
   <section
