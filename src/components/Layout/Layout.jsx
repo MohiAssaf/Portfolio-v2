@@ -11,7 +11,7 @@ function Layout() {
 
         <main
           id="content"
-          className="pt-24 lg:w-3/5 lg:py-24 p-6 md:p-12 lg:p-24"
+          className="pt-16 lg:w-3/5 lg:py-16 p-6 md:p-12 lg:p-24"
         >
           <About />
           <Education />
