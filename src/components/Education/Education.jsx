@@ -3,7 +3,10 @@ import EducationItem from "./EducationItem";
 
 const Education = () => {
   return (
-    <section id="education" className="mb-24 scroll-mt-24">
+    <section
+      id="education"
+      className="mb-32 scroll-mt-24 max-w-4xl mx-auto px-4"
+    >
       <h2 className="text-light-slate text-2xl font-bold mb-8">
         Education & Certifications
       </h2>
