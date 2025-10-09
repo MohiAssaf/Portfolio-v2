@@ -3,7 +3,7 @@ import { CONTACT_INFO, NAV_LINKS, SOCIAL_LINKS } from "@/constants/navigation";
 
 const Navbar = () => {
   return (
-    <header className="lg:sticky lg:top-0 lg:flex lg:flex-col lg:justify-between lg:max-h-screen lg:w-2/5 lg:py-24 p-6 md:p-12 lg:p-24">
+    <header className="lg:sticky lg:top-0 lg:flex lg:flex-col lg:justify-between lg:max-h-screen lg:w-2/5 p-6 md:p-12 lg:p-24">
       <div className="text-center lg:text-left">
         <motion.img
           src="/images/profile-pic.png"
@@ -29,13 +29,13 @@ const Navbar = () => {
         </p>
       </div>
 
-      <nav className="hidden lg:block mb-10" aria-label="In-page jump links">
-        <ul className="w-max space-y-3">
+      <nav className="mt-8 lg:mt-12" aria-label="In-page jump links">
+        <ul className="flex flex-col lg:flex-col lg:space-y-3 space-y-2 lg:w-max lg:mx-0 mx-auto">
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
-                className="group flex items-center py-2 text-slate hover:text-green transition-colors"
+                className="group flex items-center justify-center lg:justify-start py-2 text-slate hover:text-green transition-colors"
               >
                 <span className="mr-4 h-px w-8 bg-slate transition-all group-hover:w-16 group-hover:bg-green motion-reduce:transition-none"></span>
                 <span className="text-xs font-bold uppercase tracking-widest group-hover:text-light-slate">
@@ -47,7 +47,7 @@ const Navbar = () => {
         </ul>
       </nav>
 
-      <div className="mt-8 lg:mt-0">
+      <div className="mt-8 lg:mt-12 text-center lg:text-left">
         <ul className="space-y-2 text-sm text-slate">
           {CONTACT_INFO.map((info, idx) => (
             <li key={idx}>
@@ -65,7 +65,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <ul className="mt-6 flex items-center justify-center lg:justify-start space-x-5 text-2xl">
+        <ul className="mt-6 flex flex-wrap justify-center lg:justify-start gap-5 text-2xl">
           {SOCIAL_LINKS.map((social) => (
             <li key={social.href}>
               <a
