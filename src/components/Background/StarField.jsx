@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import ShootingStar from "@/components/Background/ShootingStar";
 
 const StarField = ({ numberOfStars = 150 }) => {
   const stars = useMemo(() => {
@@ -29,6 +30,7 @@ const StarField = ({ numberOfStars = 150 }) => {
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
       {stars}
+      <ShootingStar />
     </div>
   );
 };
