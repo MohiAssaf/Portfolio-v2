@@ -1,7 +1,37 @@
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { CONTACT_INFO, NAV_LINKS, SOCIAL_LINKS } from "@/constants/navigation";
 
 const Navbar = () => {
+  const [activeLink, setActiveLink] = useState("");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + window.innerHeight / 3;
+      let currentSection = "";
+
+      NAV_LINKS.forEach((link) => {
+        const section = document.querySelector(link.href);
+        if (section) {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+          if (
+            scrollPosition >= sectionTop &&
+            scrollPosition < sectionTop + sectionHeight
+          ) {
+            currentSection = link.href;
+          }
+        }
+      });
+
+      setActiveLink(currentSection);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:flex-col lg:justify-between lg:max-h-screen lg:w-2/5 p-6 md:p-12 lg:p-24">
       <div className="text-center lg:text-left">
@@ -31,19 +61,36 @@ const Navbar = () => {
 
       <nav className="mt-8 lg:mt-12" aria-label="In-page jump links">
         <ul className="flex flex-col lg:flex-col lg:space-y-3 space-y-2 lg:w-max lg:mx-0 mx-auto">
-          {NAV_LINKS.map((link) => (
-            <li key={link.href}>
-              <a
-                href={link.href}
-                className="group flex items-center justify-center lg:justify-start py-2 text-slate hover:text-green transition-colors"
-              >
-                <span className="mr-4 h-px w-8 bg-slate transition-all group-hover:w-16 group-hover:bg-green motion-reduce:transition-none"></span>
-                <span className="text-xs font-bold uppercase tracking-widest group-hover:text-light-slate">
-                  {link.label}
-                </span>
-              </a>
-            </li>
-          ))}
+          {NAV_LINKS.map((link) => {
+            const isActive = activeLink === link.href;
+
+            return (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  onClick={() => setActiveLink(link.href)}
+                  className={`group flex items-center justify-center lg:justify-start py-2 transition-colors ${
+                    isActive ? "text-green" : "text-slate hover:text-green"
+                  }`}
+                >
+                  <span
+                    className={`mr-4 h-px transition-all motion-reduce:transition-none ${
+                      isActive
+                        ? "w-16 bg-green"
+                        : "w-8 bg-slate group-hover:w-16 group-hover:bg-green"
+                    }`}
+                  ></span>
+                  <span
+                    className={`text-xs font-bold uppercase tracking-widest ${
+                      isActive ? "text-green" : "group-hover:text-green"
+                    }`}
+                  >
+                    {link.label}
+                  </span>
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </nav>
 
@@ -75,7 +122,7 @@ const Navbar = () => {
                 aria-label={social.label}
                 className="text-slate hover:text-green transition-colors"
               >
-                {social.icon}
+                <social.icon />
               </a>
             </li>
           ))}
