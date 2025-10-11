@@ -33,12 +33,12 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="lg:sticky lg:top-0 lg:flex lg:flex-col lg:justify-between lg:max-h-screen lg:w-2/5 p-6 md:p-12 lg:p-24">
+    <header className="static lg:sticky lg:top-0 lg:z-20 lg:flex lg:flex-col lg:justify-between lg:max-h-screen lg:w-2/5 p-6 md:p-12 lg:p-24">
       <div className="text-center lg:text-left">
         <motion.img
           src="/images/profile-pic.png"
           alt="Mohamed Abu Assaf"
-          className="w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 object-cover rounded-full border-4 border-green/50 shadow-lg mx-auto lg:mx-0"
+          className="z-20 w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 object-cover rounded-full border-4 border-green/50 shadow-lg mx-auto lg:mx-0"
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ type: "spring", stiffness: 120, damping: 15 }}

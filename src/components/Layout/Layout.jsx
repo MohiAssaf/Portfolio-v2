@@ -7,10 +7,10 @@ import StarField from "@/components/Background/StarField";
 function Layout() {
   return (
     <div className="relative bg-navy min-h-screen text-slate font-sans">
-      <div className="fixed inset-0">
+      <div className="fixed inset-0 blur-[2px] pointer-events-none">
         <StarField />
       </div>
-      <div className="lg:flex lg:justify-between lg:gap-4 mx-auto min-h-screen max-w-screen-xl">
+      <div className="flex flex-col lg:flex-row lg:justify-between lg:gap-4 mx-auto min-h-screen max-w-screen-xl">
         <Navbar />
 
         <main

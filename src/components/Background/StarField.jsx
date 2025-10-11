@@ -6,7 +6,7 @@ const StarField = ({ numberOfStars = 150 }) => {
     return Array.from({ length: numberOfStars }).map((_, i) => {
       const top = Math.random() * 100;
       const left = Math.random() * 100;
-      const size = Math.random() * 2 + 0.5;
+      const size = Math.random() * 2 + 3.2;
       const twinkleDelay = Math.random() * 5;
       const opacity = 0.3 + Math.random() * 0.7;
 
