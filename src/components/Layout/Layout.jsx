@@ -3,6 +3,7 @@ import Education from "@/components/Education/Education";
 import Experience from "@/components/Experience/Experience";
 import Navbar from "@/components/Layout/Navbar";
 import StarField from "@/components/Background/StarField";
+import BackToTopBtn from "@/components/Layout/BackToTopBtn";
 
 function Layout() {
   return (
@@ -22,6 +23,7 @@ function Layout() {
           <Experience />
         </main>
       </div>
+      <BackToTopBtn />
     </div>
   );
 }
