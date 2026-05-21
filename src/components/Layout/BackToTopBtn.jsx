@@ -7,10 +7,14 @@ const BackToTopBtn = () => {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      setVisible(window.scrollY > 300);
+      const shouldBeVisible = window.scrollY > 300;
+      setVisible((current) =>
+        current === shouldBeVisible ? current : shouldBeVisible,
+      );
     };
 
-    window.addEventListener("scroll", toggleVisibility);
+    window.addEventListener("scroll", toggleVisibility, { passive: true });
+    toggleVisibility();
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
