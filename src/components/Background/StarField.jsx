@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import ShootingStar from "@/components/Background/ShootingStar";
 
-const StarField = ({ numberOfStars = 150 }) => {
+const StarField = ({ numberOfStars = 110, mobileVisibleStars = 70 }) => {
   const stars = useMemo(() => {
     return Array.from({ length: numberOfStars }).map((_, i) => {
       const top = Math.random() * 100;
@@ -9,11 +9,12 @@ const StarField = ({ numberOfStars = 150 }) => {
       const size = Math.random() * 2 + 3.2;
       const twinkleDelay = Math.random() * 5;
       const opacity = 0.3 + Math.random() * 0.7;
+      const mobileVisibility = i >= mobileVisibleStars ? "hidden sm:block" : "";
 
       return (
         <div
           key={i}
-          className="absolute rounded-full bg-green animate-twinkle-drift"
+          className={`absolute rounded-full bg-green animate-twinkle-drift motion-reduce:animate-none ${mobileVisibility}`}
           style={{
             top: `${top}%`,
             left: `${left}%`,
@@ -25,7 +26,7 @@ const StarField = ({ numberOfStars = 150 }) => {
         />
       );
     });
-  }, [numberOfStars]);
+  }, [numberOfStars, mobileVisibleStars]);
 
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
