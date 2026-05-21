@@ -24,11 +24,6 @@ export const experiences = [
         ],
       },
       {
-        title: "EEA Air Quality Scraper",
-        desc: "Built an automated Python pipeline to collect, clean, and store Sofia’s air quality data into PostgreSQL. Leveraged Selenium for robust web scraping, Pandas for data transformation, and psycopg2 for efficient database integration. Ensured reliability with error handling, retry logic, logging, and modular design, enabling continuous monitoring and analysis of environmental data at scale.",
-        tech: ["Python", "PostgreSQL", "Pandas", "psycopg2", "Selenium"],
-      },
-      {
         title: "City Living Lab",
         desc: "Developed a modular React/Vite dashboard for City Living Lab, visualizing air quality, noise, and pedestrian sensor stations on an interactive Mapbox map. Added live metric filtering, color-coded station details, EN/BG support, and an ECharts analysis workspace with date ranges, trend lines, and CSV export. Integrated cached REST API access through an Express proxy with Docker/Nginx deployment.",
         tech: [
@@ -67,33 +62,9 @@ export const experiences = [
         ],
       },
       {
-        title: "Sofia Sensors",
-        desc: "Created a web application displaying air quality, weather, and environmental sensor data across Sofia. Features interactive Mapbox map, dynamic heatmaps, historical and live charts, pollutant-based visual cues, and efficient API caching. This frontend is powered by the City Digital Twin Laboratory API, ensuring reliable, real-time access to urban environmental data.",
-        tech: [
-          "JavaScript",
-          "Mapbox GL JS",
-          "ECharts",
-          "Turf JS",
-          "Flatpickr",
-          "REST API",
-          "LocalStorage Caching",
-        ],
-      },
-      {
-        title: "City Digital Twin Laboratory API",
-        desc: "Developed the FastAPI backend supporting Sofia Sensors, delivering endpoints for station metadata, measurements, historical aggregations, and heatmap predictions. Features authentication, caching, and optimized SQLAlchemy/PostgreSQL queries with Docker deployment to provide scalable, secure access for the Sofia Sensors frontend.",
-        tech: [
-          "Python",
-          "FastAPI",
-          "SQLAlchemy",
-          "PostgreSQL",
-          "Uvicorn",
-          "Gunicorn",
-          "Redis Cache",
-          "Pydantic",
-          "Docker",
-          "Authentication & Authorization",
-        ],
+        title: "EEA Air Quality Scraper",
+        desc: "Built an automated Python pipeline to collect, clean, and store Sofia’s air quality data into PostgreSQL. Leveraged Selenium for robust web scraping, Pandas for data transformation, and psycopg2 for efficient database integration. Ensured reliability with error handling, retry logic, logging, and modular design, enabling continuous monitoring and analysis of environmental data at scale.",
+        tech: ["Python", "PostgreSQL", "Pandas", "psycopg2", "Selenium"],
       },
     ],
   },
