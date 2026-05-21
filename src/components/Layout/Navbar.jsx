@@ -6,30 +6,41 @@ const Navbar = () => {
   const [activeLink, setActiveLink] = useState("");
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY + window.innerHeight / 3;
-      let currentSection = "";
+    const sections = NAV_LINKS.map((link) => ({
+      href: link.href,
+      element: document.querySelector(link.href),
+    })).filter(({ element }) => element);
 
-      NAV_LINKS.forEach((link) => {
-        const section = document.querySelector(link.href);
-        if (section) {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.offsetHeight;
-          if (
-            scrollPosition >= sectionTop &&
-            scrollPosition < sectionTop + sectionHeight
-          ) {
-            currentSection = link.href;
-          }
-        }
+    const setInitialActiveLink = () => {
+      const markerPosition = window.innerHeight / 3;
+      const currentSection = sections.find(({ element }) => {
+        const rect = element.getBoundingClientRect();
+        return rect.top <= markerPosition && rect.bottom > markerPosition;
       });
 
-      setActiveLink(currentSection);
+      if (currentSection) {
+        setActiveLink(currentSection.href);
+      }
     };
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveLink(`#${entry.target.id}`);
+          }
+        });
+      },
+      {
+        rootMargin: "-20% 0px -60% 0px",
+        threshold: 0,
+      },
+    );
+
+    sections.forEach(({ element }) => observer.observe(element));
+    setInitialActiveLink();
+
+    return () => observer.disconnect();
   }, []);
 
   return (
