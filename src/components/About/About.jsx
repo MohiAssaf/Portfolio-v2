@@ -7,52 +7,35 @@ const About = () => {
 
       <div className="text-slate-400 leading-relaxed space-y-4 text-base md:text-md">
         <p>
-          I’m a creative and enthusiastic{" "}
+          I’m a software engineer with 3+ years of experience building{" "}
           <span className="font-semibold text-light-slate">
-            Software Developer
-          </span>{" "}
-          passionate about building seamless, high-performance applications
-          across web and mobile platforms. I enjoy crafting intuitive{" "}
-          <span className="font-semibold text-light-slate">
-            frontend interfaces
-          </span>{" "}
-          as well as designing efficient{" "}
-          <span className="font-semibold text-light-slate">
-            backend systems
-          </span>{" "}
-          that power them.
+            Python backend systems
+          </span>, data pipelines, and APIs for data-intensive urban and
+          geospatial applications.
         </p>
         <p>
-          My expertise spans the{" "}
+          I work with{" "}
           <span className="font-semibold text-light-slate">
-            React/JavaScript
+            FastAPI, SQLAlchemy, and PostgreSQL
           </span>{" "}
-          ecosystem,{" "}
+          to turn sensor streams and external data into reliable services. My
+          work spans MQTT ingestion, scheduled ETL, automated testing, and{" "}
           <span className="font-semibold text-light-slate">
-            React Native with Expo
-          </span>{" "}
-          for mobile development,{" "}
-          <span className="font-semibold text-light-slate">Python (Flask)</span>
-          , and{" "}
-          <span className="font-semibold text-light-slate">PostgreSQL</span> for
-          scalable data management. I enjoy transforming complex ideas and data
-          into reliable, user-friendly software experiences.
+            Docker-based deployment on Linux
+          </span>, with a focus on validation and recovery.
         </p>
         <p>
-          I am committed to{" "}
+          I also build{" "}
           <span className="font-semibold text-light-slate">
-            continuous learning
+            React and React Native interfaces
           </span>{" "}
-          and staying current with the latest technology trends. I believe the
-          best applications are built through clean, maintainable code, a strong
-          understanding of users’ needs, and a focus on{" "}
+          that make complex data useful to people. I enjoy working across the
+          stack, with my strongest focus on{" "}
           <span className="font-semibold text-light-slate">
-            problem-solving
-          </span>{" "}
-          across both web and mobile platforms.
+            backend systems and production reliability
+          </span>.
         </p>
       </div>
-
     </section>
   );
 };
