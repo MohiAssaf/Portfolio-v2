@@ -47,7 +47,7 @@ const Navbar = () => {
     <header className="static lg:sticky lg:top-0 lg:z-20 lg:flex lg:flex-col lg:justify-between lg:max-h-[100dvh] lg:overflow-y-auto lg:overscroll-contain lg:w-2/5 p-6 md:p-12 lg:p-24">
       <div className="text-center lg:text-left">
         <motion.img
-          src="/images/profile-pic.png"
+          src="/personal/profile-pic.png"
           alt="Mohamed Abu Assaf"
           className="z-20 w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 object-cover rounded-full border-4 border-green/50 shadow-lg mx-auto lg:mx-0"
           initial={{ scale: 0, opacity: 0 }}
@@ -68,6 +68,13 @@ const Navbar = () => {
           I have what it takes to make an excellent asset to any Software
           Company. Let me introduce myself...
         </p>
+        <a
+          href="/personal/Mohamed-Resume.pdf"
+          download="Mohamed-Abu-Assaf-Resume.pdf"
+          className="inline-flex mt-6 rounded-md border border-green px-4 py-2 text-sm font-medium text-green transition-colors hover:bg-green/10 focus-visible:bg-green/10"
+        >
+          Download CV
+        </a>
       </div>
 
       <nav className="mt-8 lg:mt-12" aria-label="In-page jump links">
