@@ -4,7 +4,7 @@ import { Autoplay } from "swiper/modules";
 import { FaFilePdf } from "react-icons/fa";
 
 const CertificateCarousel = ({ certificates }) => (
-  <section className="mt-12">
+  <section className="mt-6">
     <div className="mb-6 border-b border-slate/20 pb-2" />
     <Swiper
       spaceBetween={20}
@@ -29,7 +29,7 @@ const CertificateCarousel = ({ certificates }) => (
           >
             <img
               src={diploma.image}
-              alt={`Diploma ${i + 1}`}
+              alt={diploma.title ?? `Diploma ${i + 1}`}
               loading="lazy"
               className="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover transition-transform duration-500 group-hover:scale-105"
             />

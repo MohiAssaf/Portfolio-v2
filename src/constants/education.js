@@ -11,15 +11,37 @@ export const EDUCATION_ITEMS = [
     ],
   },
   {
-    year: "2021 – 2025",
+    year: "2021 – 2026",
     title: "SoftUni",
     description:
-      "Gaining hands-on experience in full-stack development with a focus on modern programming languages, front-end design, backend development, and building dynamic applications",
-    tags: ["JavaScript", "Python", "HTML & CSS", "React JS"],
+      "Studied Python, JavaScript, React, and full-stack development, then completed 2026 courses in Linux administration, Azure, containerization, orchestration, Terraform, and Ansible.",
+    tags: [
+      "Python",
+      "JavaScript",
+      "React",
+      "Linux",
+      "Azure",
+      "Containers & Infrastructure",
+    ],
   },
 ];
 
 export const CERTIFICATES = [
+  {
+    title: "Containerization and Infrastructure — June 2026",
+    image: "/images/containerization-infrastructure.png",
+    pdf: "/pdfs/containerization-infrastructure.pdf",
+  },
+  {
+    title: "Azure Essentials — April 2026",
+    image: "/images/azure-essentials.png",
+    pdf: "/pdfs/azure-essentials.pdf",
+  },
+  {
+    title: "Linux System Administration — March 2026",
+    image: "/images/linux-system-administration.png",
+    pdf: "/pdfs/linux-system-administration.pdf",
+  },
   { image: "/images/py-basics.png", pdf: "/pdfs/py-basics.pdf" },
   { image: "/images/py-fund.png", pdf: "/pdfs/py-fund.pdf" },
   { image: "/images/py-advanced.png", pdf: "/pdfs/py-advanced.pdf" },

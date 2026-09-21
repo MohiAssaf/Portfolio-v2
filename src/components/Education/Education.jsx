@@ -7,7 +7,7 @@ const CertificateCarousel = lazy(() =>
 );
 
 const CarouselPlaceholder = () => (
-  <div className="mt-12 h-[17rem] md:h-[23rem]" aria-hidden="true" />
+  <div className="mt-6 h-[17rem] md:h-[23rem]" aria-hidden="true" />
 );
 
 const Education = () => {
@@ -53,6 +53,10 @@ const Education = () => {
           />
         ))}
       </ol>
+
+      <h3 className="text-light-slate text-xl font-semibold">
+        Certifications
+      </h3>
 
       {shouldLoadCarousel ? (
         <Suspense fallback={<CarouselPlaceholder />}>
