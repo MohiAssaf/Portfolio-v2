@@ -62,7 +62,7 @@ const Navbar = () => {
           Abu Assaf
         </h2>
         <p className="mt-2 text-lg font-medium tracking-tight text-green/70 sm:text-xl">
-          Junior Software Developer
+          Software Developer
         </p>
         <p className="mt-4 max-w-xs leading-relaxed text-slate mx-auto lg:mx-0">
           I have what it takes to make an excellent asset to any Software

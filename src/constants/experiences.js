@@ -1,6 +1,6 @@
 export const experiences = [
   {
-    role: "Junior Software Developer",
+    role: "Software Developer",
     company: "Gate Institute",
     website: "https://www.gate-ai.eu/en/home/",
     period: "Jun 2023 – Present",
