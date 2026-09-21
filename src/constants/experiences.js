@@ -6,8 +6,29 @@ export const experiences = [
     period: "Jun 2023 – Present",
     projects: [
       {
+        title: "Urban Sensing Data Platform",
+        desc: "Built a multi-source Python platform that ingests MQTT/LoRa streams and external environmental data into PostgreSQL. Continuous ingestion and scheduled ETL workflows use buffering, retries, coverage checks, and safe historical backfills. Modular, tested services run in Docker Compose, with Linux/systemd managing continuous and scheduled workloads.",
+        tech: ["Python", "PostgreSQL", "MQTT", "Pandas", "Docker", "Docker Compose", "Linux"],
+      },
+      {
+        title: "City Living Lab API",
+        desc: "Built a FastAPI service for City Living Lab station metadata, measurements, and raw sensor readings. API-key-protected endpoints provide filtering, pagination, and cached responses backed by PostgreSQL. The service is incrementally moving selected read-only metadata and current-measurement paths to Hadoop/Impala through an opt-in architecture.",
+        tech: [
+          "Python",
+          "FastAPI",
+          "SQLAlchemy",
+          "PostgreSQL",
+          "Uvicorn",
+          "Gunicorn",
+          "Redis Cache",
+          "Pydantic",
+          "Docker",
+          "Authentication & Authorization",
+        ],
+      },
+      {
         title: "Travel App",
-        desc: "Developed a cross-platform travel app with React Native (Expo, TypeScript, Tailwind) featuring dynamic maps (Google Maps API), animated charts, multilingual support (EN/BG), secure API authentication, offline handling, push notifications, modular architecture, and seamless background geolocation. Optimized performance with React Query and Reanimated, delivering a smooth user experience across iOS, Android.",
+        desc: "Built a React Native and Expo travel app for tracking trips across iOS and Android. Travelers can explore and edit journeys on a map, review trip-grouped timelines and history, and complete a bilingual EN/BG questionnaire. React Query supports optimistic journey updates, while cached reverse geocoding adds readable addresses to trips.",
         tech: [
           "React Native",
           "Expo",
@@ -25,7 +46,7 @@ export const experiences = [
       },
       {
         title: "City Living Lab",
-        desc: "Developed a modular React/Vite dashboard for City Living Lab, visualizing air quality, noise, and pedestrian sensor stations on an interactive Mapbox map. Added live metric filtering, color-coded station details, EN/BG support, and an ECharts analysis workspace with date ranges, trend lines, and CSV export. Integrated cached REST API access through an Express proxy with Docker/Nginx deployment.",
+        desc: "Built a React/Vite smart-city dashboard that maps air quality, noise, and pedestrian stations with Mapbox. Users can filter measurements, interpret color-coded values, inspect stations, and open a prefilled ECharts analysis view with date and time controls. The bilingual EN/BG interface supports CSV, JSON, and Excel exports; an Express proxy and Docker/Nginx support deployment.",
         tech: [
           "React",
           "Vite",
@@ -46,24 +67,8 @@ export const experiences = [
         ],
       },
       {
-        title: "City Living Lab API",
-        desc: "Developed the FastAPI backend for the City Living Lab platform, providing endpoints for real-time and historical smart city data, including air quality, noise, and pedestrian data. Implements aggregation, GeoJSON outputs for mapping, authentication, caching, and optimized PostgreSQL queries to ensure fast, secure, and scalable access for the frontend platform.",
-        tech: [
-          "Python",
-          "FastAPI",
-          "SQLAlchemy",
-          "PostgreSQL",
-          "Uvicorn",
-          "Gunicorn",
-          "Redis Cache",
-          "Pydantic",
-          "Docker",
-          "Authentication & Authorization",
-        ],
-      },
-      {
         title: "Traffic Visualization",
-        desc: "Developed a full-stack geospatial traffic analytics platform for Bulgaria, visualizing district and municipality indicators on an interactive Mapbox choropleth map. Added single-metric and correlation analysis modes, hover tooltips, region detail drawers, an optional NDVI overlay, and backend-driven metrics from PostgreSQL through a Node/Express API.",
+        desc: "Built a full-stack geospatial analytics platform for Bulgarian district and municipality indicators. An interactive Mapbox choropleth supports single-indicator and correlation analysis, with regional details and breakdowns for road safety, transport, and related data. The bilingual React/Vite frontend uses a Node/Express API backed by PostgreSQL, with Docker/Nginx deployment.",
         tech: [
           "React",
           "Vite",
@@ -78,11 +83,6 @@ export const experiences = [
           "GitHub Actions",
           "REST API",
         ],
-      },
-      {
-        title: "EEA Air Quality Scraper",
-        desc: "Built an automated Python pipeline to collect, clean, and store Sofia’s air quality data into PostgreSQL. Leveraged Selenium for robust web scraping, Pandas for data transformation, and psycopg2 for efficient database integration. Ensured reliability with error handling, retry logic, logging, and modular design, enabling continuous monitoring and analysis of environmental data at scale.",
-        tech: ["Python", "PostgreSQL", "Pandas", "psycopg2", "Selenium"],
       },
     ],
   },
