@@ -12,7 +12,7 @@ function Layout() {
       <div className="fixed inset-0 pointer-events-none">
         <StarField />
       </div>
-      <div className="flex flex-col lg:flex-row lg:justify-between lg:gap-4 mx-auto min-h-screen max-w-screen-xl">
+      <div className="relative z-10 flex flex-col lg:flex-row lg:justify-between lg:gap-4 mx-auto min-h-screen max-w-screen-xl">
         <Navbar />
 
         <main

@@ -9,7 +9,7 @@ import {
 const Technologies = () => {
   return (
     <motion.div
-      className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-12 gap-y-2 justify-items-center"
+      className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-12 gap-y-2 justify-items-center"
       variants={techContainerVariants}
       initial="hidden"
       whileInView="visible"
@@ -18,7 +18,7 @@ const Technologies = () => {
       {technologies.map((tech) => (
         <motion.div
           key={tech.name}
-          className="md:last:col-span-3 lg:last:col-span-1"
+          className="md:last:col-span-3 xl:last:col-span-1"
           variants={techVariants}
           whileHover={{
             scale: 1.1,
