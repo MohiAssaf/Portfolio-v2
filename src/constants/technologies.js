@@ -3,10 +3,22 @@ import {
   FaJsSquare,
   FaReact,
   FaDocker,
+  FaLinux,
   FaHtml5,
   FaCss3Alt,
 } from "react-icons/fa";
-import { SiTypescript, SiPostgresql, SiTailwindcss } from "react-icons/si";
+import {
+  SiTypescript,
+  SiPostgresql,
+  SiTailwindcss,
+  SiKubernetes,
+  SiTerraform,
+  SiAnsible,
+  SiFastapi,
+  SiSqlalchemy,
+  SiGithubactions,
+} from "react-icons/si";
+import { VscAzure } from "react-icons/vsc";
 
 export const technologies = [
   { name: "Python", icon: FaPython },
@@ -17,6 +29,14 @@ export const technologies = [
   { name: "Tailwind CSS", icon: SiTailwindcss },
   { name: "Docker", icon: FaDocker },
   { name: "HTML & CSS", icon: [FaHtml5, FaCss3Alt] },
+  { name: "Linux", icon: FaLinux },
+  { name: "Microsoft Azure", icon: VscAzure },
+  { name: "Kubernetes", icon: SiKubernetes },
+  { name: "Terraform", icon: SiTerraform },
+  { name: "Ansible", icon: SiAnsible },
+  { name: "FastAPI", icon: SiFastapi },
+  { name: "SQLAlchemy", icon: SiSqlalchemy },
+  { name: "GitHub Actions", icon: SiGithubactions },
 ];
 
 export const techContainerVariants = {

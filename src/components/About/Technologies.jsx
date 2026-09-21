@@ -18,6 +18,7 @@ const Technologies = () => {
       {technologies.map((tech) => (
         <motion.div
           key={tech.name}
+          className="md:last:col-span-3 lg:last:col-span-1"
           variants={techVariants}
           whileHover={{
             scale: 1.1,
