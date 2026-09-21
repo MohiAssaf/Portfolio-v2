@@ -1,4 +1,5 @@
 import About from "@/components/About/About";
+import Skills from "@/components/Skills/Skills";
 import Education from "@/components/Education/Education";
 import Experience from "@/components/Experience/Experience";
 import Navbar from "@/components/Layout/Navbar";
@@ -19,6 +20,7 @@ function Layout() {
           className="pt-16 lg:w-3/5 lg:py-16 p-6 md:p-12 lg:p-24"
         >
           <About />
+          <Skills />
           <Education />
           <Experience />
         </main>

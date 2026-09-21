@@ -1,5 +1,3 @@
-import Technologies from "@/components/About/Technologies";
-
 const About = () => {
   return (
     <section id="about" className="mb-32 scroll-mt-24 max-w-4xl mx-auto px-4">
@@ -55,9 +53,6 @@ const About = () => {
         </p>
       </div>
 
-      <div className="mt-12">
-        <Technologies />
-      </div>
     </section>
   );
 };

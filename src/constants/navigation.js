@@ -2,6 +2,7 @@ import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export const NAV_LINKS = [
   { href: "#about", label: "ABOUT ME" },
+  { href: "#skills", label: "SKILLS" },
   { href: "#education", label: "EDUCATION" },
   { href: "#experience", label: "EXPERIENCE" },
 ];
