@@ -44,7 +44,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="static lg:sticky lg:top-0 lg:z-20 lg:flex lg:flex-col lg:justify-between lg:max-h-screen lg:w-2/5 p-6 md:p-12 lg:p-24">
+    <header className="static lg:sticky lg:top-0 lg:z-20 lg:flex lg:flex-col lg:justify-between lg:max-h-[100dvh] lg:overflow-y-auto lg:overscroll-contain lg:w-2/5 p-6 md:p-12 lg:p-24">
       <div className="text-center lg:text-left">
         <motion.img
           src="/images/profile-pic.png"
