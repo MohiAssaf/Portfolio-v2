@@ -14,19 +14,25 @@ export const EDUCATION_ITEMS = [
     year: "2021 – 2026",
     title: "SoftUni",
     description:
-      "Studied Python, JavaScript, React, and full-stack development, then completed 2026 courses in Linux administration, Azure, containerization, orchestration, Terraform, and Ansible.",
+      "Studied Python, JavaScript, React, and full-stack development, then completed 2026 courses in Linux administration, Azure, containerization, Kubernetes orchestration, Terraform, and Ansible.",
     tags: [
       "Python",
       "JavaScript",
       "React",
       "Linux",
       "Azure",
+      "Kubernetes",
       "Containers & Infrastructure",
     ],
   },
 ];
 
 export const CERTIFICATES = [
+  {
+    title: "Kubernetes — September 2026",
+    image: "/images/kubernetes.png",
+    pdf: "/pdfs/kubernetes.pdf",
+  },
   {
     title: "Containerization and Infrastructure — June 2026",
     image: "/images/containerization-infrastructure.png",
